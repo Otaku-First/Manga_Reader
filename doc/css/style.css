@@ -1,0 +1,232 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css);
+body{
+    font-size:13px;
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    background: #F1F1F1;
+    color: #333;
+}
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    color:#1da9f4;
+    font-size:13px;
+    font-family:  Tahoma, sans-serif;
+}
+a:hover {
+    color:#f41d75;
+}
+ul{
+    list-style:none;
+}
+::selection {
+    background-color:#5EB948;
+    color:#FFF;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 98%;
+    margin: 10px 0;
+    background:  #dfe2e8;
+}
+
+#clr {
+    clear:both;
+}
+img {
+    max-width:100%;
+    height: auto;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454545;
+    border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.max_width {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    background: #1da9f4;
+    height: 350px;
+}
+.header {
+    padding: 40px 0;
+    position: relative;
+}
+.logo a {
+    display: block;
+    line-height: 25px;
+    font-size: 16px;
+    color: rgba(255,255,255,.9);
+    padding: 5px;
+    width: 200px;
+    position: relative;
+    font-family: Tahoma, sans-serif;
+    font-weight: 100;
+}
+.logo a span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255,255,255,.9);
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #1DA9F4;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+.logo a i {
+    position: absolute;
+    top: -5px;
+    left: 90px;
+    z-index: 2;
+    font-size: 10px;
+    font-style: normal;
+}
+.logo a b {
+    font-weight: 300;
+}
+
+.content {
+    margin: -200px 0 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.namestr {
+    font-size: 36px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+span.namestrspan {
+    display: block;
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    margin: 40px 0 0;
+}
+
+.comin {
+    background: #FFF;
+    padding: 20px;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.ulinstr ul {
+
+    padding: 10px;
+}
+.ulinstr ul li {
+    line-height: 40px;
+    font-size: 15px;
+    display: block;
+    clear:both;
+
+}
+.ulinstr ul li i {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1da9f4;
+    display: block;
+    margin: 15px 15px 0 0;
+    float: left;
+}
+
+.codeinst {
+    margin: 20px -20px;
+    max-height: 300px;
+    overflow: auto;
+    background: #000;
+}
+.codebc {
+    display: block;
+    padding: 20px 30px;
+    background: #000;
+    color: #f1f1f1;
+    line-height: 22px;
+    height: auto;
+
+}
+
+
+/* Подсветка кода 
+------------------------------------------*/
+
+div .codeMessage .str {color: #E6DB74 } /* string - pink */
+div .codeMessage .kwd {color: #66D9EF; }
+div .codeMessage .com {color: #AE81FF } /* comment - skyblue */
+div .codeMessage .typ {color: #00853E } /* type - lightgreen */
+div .codeMessage .lit {color: #F92672 } /* literal - darkred */
+div .codeMessage .pun {color: #f8f8f2e6 } /* punctuation */
+div .codeMessage .pln {color: #f8f8f2e6 } /* plaintext */
+div .codeMessage .tag {color: #F92672; }
+div .codeMessage .atn {color: #A6E22E; } /* attribute name - khaki */
+div .codeMessage .atv {color: #E6DB74} /* attribute value - pink */
+div .codeMessage .dec {color: #98fb98 } /* decimal - lightgreen */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type:none }
+
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+.codeinst::-webkit-scrollbar-thumb {
+    background: #1edee8;
+    border: 0px none #ffffff;
+}
+#smlTbl {
+    width: 100%;
+    text-align: center;
+}

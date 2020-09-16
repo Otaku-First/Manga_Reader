@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+    <title>Страница ЛС в стиле телеграм для UCOZ</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+<style>#smlTbl {
+    width: 100%;
+    text-align: center;
+}</style>
+<header>
+<div class="max_width">
+	<div class="header">
+
+	</div>
+</div>
+</header>
+
+
+<div class="max_width">
+	<div class="content">
+		<div class="namestr">Страница ЛС в стиле телеграм для UCOZ</div>
+
+		<div class="img"><img src="img/1.png"></div>
+		<div class="comin">
+		<h2>Введение</h2>
+		<hr>
+			Благодарим Вас за покупку товара! Все последующие обновления и фиксы вы будете получать бесплатно!
+		<hr>
+			Перед установкой, сделайте полную резервную копию сайта на случай, если вы в какой-то момент решите вернуть прежний вид сайту или отдельным его элементам.
+		<br><br><h2>Требования к установке:</h2>
+		<div class="ulinstr">
+			<ul>
+
+                <li><i></i> Тип капчи <b>Простой</b></li>
+                <li><i></i> Версия библиотеки jQuery <b>3.3.1</b></li>
+                <li><i></i> Не использовать визуальный редактор комментариев<b> Постивить галочку </b></li>
+                <li><i></i> Язык сайта <b>Русский</b></li>
+
+
+
+			</ul>
+		</div>
+
+
+
+		<br><br><h2>Первый шаг: </h2>
+		<hr>
+            Закиньте все файлы из папки "Telegram UCOZ" в корень сайта и замените весь код в шаблоне ЛС на следуйщий
+            <div class="codeinst">
+                <xmp  class="codebc codeMessage">
+                    <?substr($ADMIN_BAR$,0,0)?>
+                    <html>
+                    <head>
+                        <meta charset="utf-8"><meta id="he_bro_color" name="theme-color" content="white">
+                        <link type="text/css" rel="stylesheet" href="/userPM/css/global_style.css" />
+                        <?if($URI_ID$='userpmMessage' || $URI_ID$='userpmNewToGroup' ||$URI_ID$='userpmNew')?>
+                        <link id="dyncss" rel="stylesheet" type="text/css" href="">
+                        <script type="text/javascript">
+                            function setDynCSS(url) { if (!arguments.length) { url = (url = document.cookie.match(/\bdyncss=([^;]*)/)) && url[1]; if(url=="/userPM/css/userpmInbox-dark.css"){ url = "/userPM/css/userpmMessage-dark.css"}if (!url) return ''; } document.getElementById('dyncss').href = url; } setDynCSS(); </script>
+                        <?endif?><link rel="stylesheet" href="/userPM/css/style.css"/>
+                        <?if($URI_ID$="userpmInbox" || $URI_ID$="userpmSendbox")?>
+                        <!--userpmInbox userpmSendbox-->
+                        <link rel="stylesheet" href="/userPM/css/userpminbox.css">
+                        <link id="apolink" rel="stylesheet" href="">
+                        <!--/userpmInbox userpmSendbox-->
+                        <link id="dyncss" rel="stylesheet" type="text/css" href="">
+                        <script type="text/javascript"> function setDynCSS(url) { if (!arguments.length) { url = (url = document.cookie.match(/\bdyncss=([^;]*)/)) && url[1]; if (!url) return ''; } document.getElementById('dyncss').href = url; var d = new Date(); d.setFullYear(d.getFullYear() + 1); document.cookie = ['dyncss=', url, ';expires=', d.toGMTString(), ';path=/;'].join(''); return url; } setDynCSS(); </script>
+                        <script>var dyncss = $('#dyncss').attr("href");$("head").append('<link id="dyncss2" rel="stylesheet" type="text/css" href="'+dyncss+'"> ');</script>
+                        <?endif?>
+                        <meta name=viewport content="width=450">
+                        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;" />
+                        <link href="/fontawesome/css/all.css" rel="stylesheet" >
+                    </head>
+                    <body class="strlswaaxbd">
+                    $BODY$
+                    <script src="/userPM/js/body_pm.js"></script>
+                    <?if($URI_ID$='userpmMessage' || $URI_ID$='userpmNewToGroup' ||$URI_ID$='userpmNew')?>
+                    <div class="pm_modal_link"><div class="pm_link_div"><ul><li><span>Адрес страницы:</span><input type="text" data-tag="leech" id="pm_bb_url" value="" placeholder="http://..." class="pm_bb_url"></li><li><span>Название страницы:</span><input type="text" class="pm_bb_title" value="" placeholder="Не обязательно"></li></ul><div class="pm_bb_modal_buttons" style=""><a href="#" class="pm_bb_modal_close">Отменить</a><a href="#" class="pm_bb_modal_paste">Добавить</a></div></div></div> <div class="pm_modal_img"><div class="pm_link_div_img"><ul><li><span>Адрес изображения:</span><input type="text" data-tag="leech" id="pm_bb_url_img" value="" placeholder="http://..." class="pm_bb_url_img"></li></ul><div class="pm_bb_modal_buttons_img" style=""><a href="#" class="pm_bb_modal_close_img">Отменить</a><a href="#" class="pm_bb_modal_paste_img">Добавить</a></div></div></div> <div class="pm_modal_video"><div class="pm_link_div_video"><ul><li><span>Адрес видео с YouTube:</span><input type="text" data-tag="leech" id="pm_bb_url_video" value="" placeholder="https://youtube.com/..." class="pm_bb_url_video"></li></ul><div class="pm_bb_modal_buttons_video" style=""><a href="#" class="pm_bb_modal_close_video">Отменить</a><a href="#" class="pm_bb_modal_paste_video">Добавить</a></div></div></div> <div class="pm_modal_audio"><div class="pm_link_div_audio"><ul><li><span>Адрес аудио файла:</span><input type="text" data-tag="leech" id="pm_bb_url_audio" value="" placeholder="http://...mp3" class="pm_bb_url_audio"></li></ul><div class="pm_bb_modal_buttons_audio" style=""><a href="#" class="pm_bb_modal_close_audio">Отменить</a><a href="#" class="pm_bb_modal_paste_audio">Добавить</a></div></div></div>
+                    <script type="text/javascript" src="/userPM/js/pm_modal.js"> </script>
+                    <?endif?>
+                    <?if($URI_ID$='userpmNewToGroup')?>
+                    <link rel="stylesheet" href="/userPM/css/magic-check.css"/>
+                    <script>$(document).ready(function(){$('#ugr1:eq(1)').addClass("magic-checkbox");});</script>
+                    <link rel="stylesheet" href="/userPM/css/userpmNew.css"/>
+                    <link rel="stylesheet" href="/userPM/css/userpmNewToGroup.css"/>
+                    <link href="/userPM/css/jquery.formstyler.css" rel="stylesheet" />
+                    <link href="/userPM/css/jquery.formstyler.theme.css" rel="stylesheet" />
+                    <script src="/userPM/js/jquery.formstyler.min.js"></script>
+                    <script>(function($) {$(function() {$('input[type="checkbox"]').styler({selectSearch: true,});});})(jQuery);</script>
+                    <script src="/userPM/js/textarea_resize.js"></script>
+                    <script src="/userPM/js/for_smiles.js"></script>
+                    <?endif?>
+                    <?if($URI_ID$='userpmNew')?>
+                    <div style="display:none !important;" id="for_userload">$REQUEST_URI$</div>
+                    <script src="/userPM/js/userload.js"></script>
+                    <script>search.run(window.location.href,12); $('#LStoUser').focus(function () {search.focus()}); $('#LStoUser').blur(function () {search.blur()}); $("#LStoUser").keyup(function () {search.start()});</script>
+                    <link rel="stylesheet" href="/userPM/css/userpmNew.css"/>
+                    <style>.strlswaaxbd {background: url(/js/bg_taligram.png) !important;}</style>
+                    <script src="/userPM/js/textarea_resize.js"></script>
+                    <script src="/userPM/js/for_smiles.js"></script>
+                    <?endif?>
+                    <?if($URI_ID$='userpmMessage' )?>
+                    <?if($URI_ID$='userpmMessage' )?>
+                    <link rel="stylesheet" href="/userPM/css/userpmMessage.css">
+                    <div id="for_urlconfrim" style="display:none !important;">$REQUEST_URI$</div>
+                    <script src="/userPM/js/urlconfrim.js"></script>
+                    <script> $(document).ready(function(){var timepm =$('td[align="right"]').text();$('.msin_r').append('<div class="timepm">'+timepm+'</div>'); });</script>
+                    <?endif?>
+                    <div class="user-pm-profile"></div>
+                    <script>$(document).ready(function(){var hrefpmstminprof = $('.m_author a').attr('href');$('.user-pm-profile').load(window.location.protocol+'//'+document.domain+hrefpmstminprof+' #hrefpmstminprof');});</script>
+                    <script>$('.lsbcavd').append('<div id="statupmblock"></div>');var hrefpmstloade = $('.m_author a').attr('href');$('#statupmblock').load(window.location.protocol+'//'+document.domain+hrefpmstloade+' #hrefpmstload');</script>
+                    <link rel="stylesheet" href="/userPM/css/pm_link.css"/>
+                    <script src="/userPM/js/textarea_resize.js"></script>
+                    <script src="/userPM/js/for_smiles.js"></script>
+                    <script src="/userPM/js/user-pm-profile.js"></script>
+                    <script>$(document).ready(function(){ var urlconfrim2 = '$REQUEST_URI$'; var lengthpm = $('div.outputPM').length; var lengthpm2 = Number(lengthpm); if (lengthpm2>0){ var htmlpm =$('tr[style="padding:20px;line-height: 22px"]').html(); var sum2 =htmlpm.replace(/<div id="snewmes"/g,"</div><div id='snewmes'"); var sum = sum2.replace(/<hr>/g,'<div class="inputPM">'); $('tr[style="padding:20px;line-height: 22px"]').html(sum); }else{ var confrimst = $('#snewmes').html(); if (confrimst==undefined){ }else{ <?if($USER_AGENT$="firefox")?> var sdfsd= $('td[style="padding: 0px 0px 150px; line-height: 22px; max-width: 330px; min-height: calc(-110px + 101vh); display: block;"]').html();<?endif?> <?if($USER_AGENT$="chrome" || $USER_AGENT$="opera" )?>var sdfsd= $('td[style="padding: 0px 0px 150px; line-height: 22px; max-width: 330px; min-height: calc(101vh - 110px); display: block;"]').html();<?endif?> $('tr[style="padding:20px;line-height: 22px"]').html('<div class="outputPM">'+sdfsd+'</div>'); }}});</script>
+                    <ul class="contextMenu" hidden></ul>
+                    <script type="text/javascript" src="/userPM/js/quote_pm.js"> </script>
+                    <script>$(document) .on('click','#cholsemodalpm', function(){$('.user-pm-profile').css('display','none');}) ;</script>
+                    <?endif?>
+                    <script>$('#pmdform').prepend('<div class="dpm-sidebar-header"><a href="#" class="dpm-sidebar-menu-icon" title=""></a><input type="text" class="dpm-search" placeholder="Искать..."> <a href="#" class="dpm-search-close"></a></div>'); </script><script>$('#pmdform').prepend('<div class="dpm-container-empty iframe-past" style="float: right;width: 100%;height: 100%;position: absolute;top: 0px;margin-top: 0px;"><iframe id="web_view" style="background: url(/userPM/img/bg_taligram.png);width: calc(100% - 350px);border: none;height: 100%;position: relative;left: 350px;float: left;" src=""></iframe></div>');
+                    </script>
+                    <?if($URI_ID$='userpmInbox' || $URI_ID$='userpmSendbox')?>
+                    <div class="smena-fona-b-m" style=""><div class="smena-fona-b" style="">
+                        <div class="user-pm-content-close"><i aria-hidden="true" class="fas fa-times"></i></div>
+                        <div id="past_img" >
+                            <img class="fon-img" src=""> </div>
+                        <span id="background"></span>
+                        <div class="button-b">
+                            <button style="text-align: center;" onclick="deletebg()">Удалить фон</button><button style="text-align: center;" onclick="bgchange()">Изменить фон</button></div></div></div>
+                    <ul class="contextMenu" hidden></ul>
+                    <!--меню-->
+                    <div class="dpm-menu-wrapper" style="">
+                        <div class="dpm-menu-content">
+                            <a href="#" class="dpm-menu-close"></a>
+                            <div class="dpm-menu-profile">
+                                <a href="$PERSONAL_PAGE_LINK$" class="dpm-menu-profile-link">
+                                    <img src="<?if($USER_AVATAR_URL$)?>$USER_AVATAR_URL$<?else?>https://otaku-first.online/dleimages/noavatar.png<?endif?>" alt="$USERNAME$" class="dpm-menu-profile-foto">
+                                    $USERNAME$
+                                    <div class="dpm-menu-profile-group">$USER_GROUP$</div>
+                                </a>
+                                <ul class="toggleul">
+                                    <li><a class="white" onclick="setDynCSS('/cssmydark.css')"><i class="far fa-sun"></i></a> </li>
+                                    <li><a class="dark" onclick="setDynCSS('/userPM/css/userpmInbox-dark.css')"><i class="far fa-moon-stars"></i></a> </li>
+                                    <li><a id="opensm"><i class="far fa-image"></i></a></li>
+                                </ul>
+                            </div>
+                            <ul class="dpm-menu-actions dpm-menu-class">
+                                <li><a href="/index/14-0-0" class="dpm-clear-all">Принятые</a></li>
+                                <li><a href="/index/14-0-1">Отправленные</a></li>
+                                <li><a id="m-new-pm" href="/index/14-0-0-1">Отправить ЛС</a></li>
+                                <?if($USER_ID$='1')?><li><a id="m-new-m-r" href="/index/14-0-5">Массовая рассылка</a></li><?endif?>
+                            </ul>
+                            <div class="dpm-menu-stats">
+                                <ul class="dpm-menu-stats-list">
+                                    <li>Всего: <b id="sumpm"></b><div class="dpm-menu-stats-list-bar dpm-bar1"><div style="width:8%"></div></div></li>
+                                    <li>Новые: <b>$UNREAD_PM$</b><div class="dpm-menu-stats-list-bar dpm-bar5"><div style="width:0%"></div></div></li>
+                                    <li>Принятые: <b id="vhod"></b><div class="dpm-menu-stats-list-bar dpm-bar2"><div style="width:47%"></div></div></li>
+                                    <li>Отправленные: <b id="vyod"></b><div class="dpm-menu-stats-list-bar dpm-bar4"><div style="width:53%"></div></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><?endif?>
+                    <script>$(document).ready(function(){ $('#pmdform').prepend('<div class="dpm-dialog-loading dpm-main-loading"></div>'); });</script>
+                    <?if($URI_ID$='userpmInbox' || $URI_ID$='userpmSendbox')?>
+                    <!--Плагин скрола-->
+                    <script src="/userPM/js/jquery.nicescroll.js"></script>
+                    <script>$(document).ready(function() {var nice = $("#pmdform table").niceScroll();});</script>
+                    <style>.nicescroll-rails div { background: #5e5e5ea3 !important; } table[width="100%"] { display: block;position: absolute; height: calc(100% - 54px); overflow: auto;}</style>
+                    <!--скрипт поиска на главной-->
+                    <script type="text/javascript">$(function(){$('input.dpm-search').on('input', function(){var str = $(this).val().toLowerCase();if (str.length <= 0){$('tbody tr').show();}else { $('tbody tr').each(function(){if ($(this).text().toLowerCase().indexOf(str) < 0){$(this).hide();}}); }});}); </script>
+                    <?endif?>
+                    <!--Скрипт смены фона-->
+                    <script type="text/javascript" src="/userPM/js/smena-fona.js"></script>
+                    <!--Скрипт менюшки на ПКМ "Удалить"-->
+                    <?if($URI_ID$='userpmInbox' || $URI_ID$='userpmSendbox')?><?if($USER_AGENT$="firefox")?> <script src="/userPM/js/del_pm-f.js"></script><?endif?>
+                    <?if($USER_AGENT$="chrome")?><script src="/userPM/js/del_pm-c.js"></script><?endif?>
+                    </script><?endif?>
+                    <!--Основной скрипт менюшки-->
+                    <?if($USER_AGENT_PDA$)?><script>var urlconfrim = $('#for_urlconfrim').text(); var urlconfrimo = urlconfrim; var urlconfrimor = urlconfrimo.slice(-1); $(document).ready(function(){ $('.msin_t').prepend('<div class="msin_l" style="padding: 4px 5px 5px 5px;"><a style="color:#6490b1;" href="/index/14-0-'+urlconfrimor+'"><i class="fas fa-arrow-left fa-2x"></i></div></a>'); });</script>
+                    <?endif?>
+                    <script>var vhod = $('a[href="/index/14-0-0"] b').text(); var vyod = $('a[href="/index/14-0-1"] b').text(); var sumpam = parseInt(vhod)+parseInt(vyod); $('#vhod').text(vhod); $('#vyod').text(vyod); $('#sumpm').text(sumpam+" з 200"); $('.dpm-bar2 div').css('width', (100 / (200 / vhod)).toFixed(2)+'%'); $('.dpm-bar4 div').css('width', (100 / (200 / vyod)).toFixed(2)+'%'); $('.dpm-bar1 div').css('width', (100 / (200 / sumpam)).toFixed(2)+'%'); $('.dpm-bar5 div').css('width', (100 / (200 / $UNREAD_PM$)).toFixed(2)+'%'); $(document).ready(function(){ $('.dpm-sidebar-menu-icon').click(function() { $('.dpm-menu-wrapper').css('display', 'block'); function open() { $('.dpm-menu-content').css('left', '0px'); }setTimeout(open, 300); return false;}); $('.dpm-menu-close').click(function() { $('.dpm-menu-content').css('left', '-300px'); function close() { $('.dpm-menu-wrapper').css('display', 'none');}setTimeout(close, 300); return false;}); var isMobile = { Android: function() { return navigator.userAgent.match(/Android/i);}, BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i);}, iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i);}, Opera: function() {return navigator.userAgent.match(/Opera Mini/i);}, Windows: function() {return navigator.userAgent.match(/IEMobile/i);}, any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}};if(!isMobile.any()){ $('#m-new-pm,#m-new-m-r').click(function() { $('.dpm-menu-content').css('left', '-300px'); function close_m() { $('.dpm-menu-wrapper').css('display', 'none');} setTimeout(close_m, 300); var isPlayerp = $(this).attr('href'); $('#web_view').attr('src',isPlayerp); $('.dpm-dialog-loading').css('display', 'block'); function hidep() {$('.dpm-dialog-loading').css('display', 'none');} setTimeout(hidep, 2000);return false; }); $('a[id="href"],a[title="Посмотреть сообщения"]').click(function() { var isPlayer = $(this).attr('href'); $('#web_view').attr('src',isPlayer); $('.dpm-dialog-loading').css('display', 'block'); function hidep() { $('.dpm-dialog-loading').css('display', 'none'); } setTimeout(hidep, 2000); return false; }); } $('.smena-fona-b-m .smena-fona-b i').click(function() { $('.smena-fona-b-m').css('display','none');return false; }); $('#opensm').click(function() { $('.smena-fona-b-m').css('display','block'); $('.dpm-menu-content').css('left', '-300px');function closemenu() { $('.dpm-menu-wrapper').css('display', 'none');}setTimeout(closemenu, 300);return false; });});
+                    </script>
+                    </body>
+                    </html>
+                </xmp>
+            </div>
+
+
+
+
+
+		<br><br><h2>Второй шаг</h2>
+		<hr>
+
+            В нижнюю часть сайта вставьте
+
+		<div class="codeinst">
+			<xmp  class="codebc codeMessage">
+                <!--Оповещение ЛС-->
+                <link href="/fontawesome/css/all.css" rel="stylesheet" >
+                <link type="text/css" rel="stylesheet" href="/userPM/css/notification.css" />
+                <?if($USER_LOGGED_IN$)?>
+                <div id="one_pm"></div>
+
+                <script type="text/javascript">
+                    var this_mess_link = '/img/no-ava.png';
+                    function m_reload() {
+                        if($('#one_pm').html()=='') {
+                            $.get('/index/14?'+Math.random(), function (data) {
+                                $('b.unread', data).each(function (i,index) {
+                                    getLink = $(index).parent().attr("href");
+                                    this_mess_link = getLink;
+                                    getText = $(index).parent().text();
+                                    getAuthorName = $(index).parent().parent().children('a').eq(1).text();
+                                    getAuthor = $(index).parent().parent().children('a').eq(1).attr("href");
+                                    getID = '#one_pm'+i;
+                                    var firstChar = getAuthor.replace('/index/8-0-','').substr(0, 1).toLowerCase();
+                                    var xml = $.ajax({
+                                        type: 'GET',
+                                        url: '/api/index/8-0-'+getAuthorName.replace('-','~'),
+                                        dataType: 'xml',
+                                        async: false
+                                    }).responseText;
+                                    $('#one_pm').html('<div id="one_pm'+i+'" style="display:none">'
+                                        +'<div class="h_newpm">'
+                                        +'<div class="h_npin"><a class="h_nover" href="'+getLink+'"></a>'
+                                        +'<span class="h_del" onclick="h_del();return false;"><i class="fal fa-times"></i></span>'
+                                        +'<div class="h_npl"><div class="h_npimg"><a href="'+getAuthor+'"><span class="noava noava-'+firstChar+' lsbcavd">'+firstChar+'</span></a></div></div>'
+                                        +'<div class="h_npr"><a href="'+getAuthor+'" id="hnp_author"></a>'+getAuthor.replace('/index/8-0-','')+'<a id="hnp_text" href="'+getLink+'">'+getText+'</a></div>'
+                                        +'</div>'
+                                        +'</div>'
+                                        +'</div><div id="hnp_sound"></div>');
+                                    setTimeout(function(){$(getID).slideDown(200);},200);
+                                    $('#hnp_sound').html('<audio src="/userPM/mp3/sound.mp3" volume="1" autoplay></audio>');setTimeout(function(){$('#hnp_sound').html('')},2000);
+                                });
+                            });
+                        }
+                    }
+                    function h_del() {$('#one_pm').fadeOut(200,function(){$('#one_pm').html('<i></i>')});$.get(this_mess_link);}
+                    m_reload();setInterval(function(){m_reload()}, 15000);
+                </script>
+
+
+
+                <?endif?>
+			</xmp>
+		</div>
+
+
+            <br><br><h2>Третий шаг</h2>
+            <hr>
+            Зайдите в Инструменты->Редактор смайлов и добавляйте за следующим шаблоном
+            <br> <br>
+            <table id="smlTbl" class="myTbl autoNumerate smiles">
+                <thead>
+                <tr>
+
+                    <th>Код вызова смайла
+                    </th>
+                    <th>Смайл
+                    </th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="s1">
+
+                    <td><b>%)</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/shock.gif"></td>
+
+                </tr>
+                <tr id="s2">
+
+                    <td><b>0:)</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/angel.gif"></td>
+
+                </tr>
+                <tr id="s3">
+
+                    <td><b>:(</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/sad.gif"></td>
+
+                </tr>
+                <tr id="s4">
+
+                    <td><b>:)</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/smile.gif"></td>
+
+                </tr>
+                <tr id="s5">
+
+                    <td><b>:D</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/laugh.gif"></td>
+
+                </tr>
+                <tr id="s6">
+
+                    <td><b>:p</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/tease.gif"></td>
+
+                </tr>
+                <tr id="s7">
+
+                    <td><b>;)</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/wink.gif"></td>
+
+                </tr>
+                <tr id="s8">
+
+                    <td><b>B)</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/cool.gif"></td>
+
+                </tr>
+                <tr id="s9">
+
+                    <td><b>^_^</b></td>
+                    <td><img src="http://comics-team.at.ua/smiles/care.gif"></td>
+
+                </tr>
+                <tr id="s10">
+
+                    <td>:<b>clups</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/clups.gif"></td>
+
+                </tr>
+                <tr id="s11">
+
+                    <td>:<b>cry</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/cry.gif"></td>
+
+                </tr>
+                <tr id="s12">
+
+                    <td>:<b>des</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/desman.gif"></td>
+
+                </tr>
+                <tr id="s13">
+
+                    <td>:<b>eye</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/eye.gif"></td>
+
+                </tr>
+                <tr id="s14">
+
+                    <td>:<b>fools</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/fools.gif"></td>
+
+                </tr>
+                <tr id="s15">
+
+                    <td>:<b>like</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/like.gif"></td>
+
+                </tr>
+                <tr id="s16">
+
+                    <td>:<b>ok</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/ok.gif"></td>
+
+                </tr>
+                <tr id="s17">
+
+                    <td>:<b>peace</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/peace.gif"></td>
+
+                </tr>
+                <tr id="s18">
+
+                    <td>:<b>please</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/please.gif"></td>
+
+
+                </tr>
+                <tr id="s19">
+
+                    <td>:<b>unlike</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/unlike.gif"></td>
+
+                </tr>
+                <tr id="s20">
+
+                    <td>:<b>xD</b>:</td>
+                    <td><img src="http://comics-team.at.ua/smiles/xd.gif"></td>
+
+                </tr>
+                </tbody>
+            </table>
+
+
+
+		<br><br><h2>Установка завершена!</h2>
+		<hr>
+		Если у вас возникли вопросы по товару или проблема с установкой, то Вы можете связаться со мной одним из удобных для вас способом
+
+<hr>
+		<div class="ulinstr">
+			<ul>
+				<li><i></i> Через: <a href="https://t.me/OtakuFirstUA">Telegram</a>  </li>
+				<li><i></i> Через Email: <a href="mailto:otakufirstua@gmail.com">otakufirstua@gmail.com</a></li>
+				<li><i></i> Через: <a href="https://prowebber.ru/index.php?do=pm&doaction=newpm&user=107178">prowebber.ru</a></li>
+			</ul>
+		</div>
+<hr>
+С уважением <b>Otaku-First</b>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
