@@ -1,0 +1,80 @@
+.inftemalsstr {
+ width: 100% !important;
+}
+
+.jq-checkbox:first-child {
+    margin-left: 4px !important;
+}
+.jq-checkbox {
+    border-radius: 3px !important;
+}
+.jq-checkbox {
+    vertical-align: -4px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 4px 0 0 !important;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    margin-left: 0px !important;
+    border: 0px solid #C3C3C3 !important;
+    background: #6490b1 !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    margin-bottom: 3px !important;
+}.jq-checkbox.checked .jq-checkbox__div {
+    width: 12px !important;
+    height: 7px !important;
+    margin: 4px 0 0 4px !important;
+    border-bottom: 2px solid #fff !important;
+    border-left: 2px solid #fff !important;
+    -webkit-transform: rotate(-50deg) !important;
+    transform: rotate(-50deg) !important;
+}.jq-checkbox {
+    border-radius: 3px !important;
+}.jq-checkbox:first-child {
+    margin-left: 4px !important;
+}.strlswaaxbd {
+    background: url(/userPM/img/bg_taligram.png) !important;
+}#lsSubject:focus {
+    border-color: #6490b1;
+}#lsSubject {
+    border-radius: 4px;
+    transition: all 0.3s;
+    box-shadow: 0 1px 2px #6490b1;
+}.strlspolgrupp label {
+    font-family: 'Roboto';color: #575757;
+}.inftemalsstr {
+    font-family: 'Roboto';color: #575757;
+}#addform {
+
+    height: 100%;
+
+}#addform table tbody tr td table {
+
+    background: none !important;
+position:absolute;
+
+}.inftemalsstr {
+
+    padding: 0 20px 310px;
+
+}#message2 {
+    position: relative;
+    z-index: 13;
+}.inftemalsstr input, textarea#message2 {
+ padding: 15px;
+ padding-right: 15px;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-left: 15px;
+ border: 1px solid #e2dfdf;
+ height: auto;
+ padding-left: 40px;
+ padding-right: 140px;
+ min-height: 0px;
+}#message2 {
+ height: 54px !important;
+}input[type="checkbox"] {
+    min-height: 0px !important;
+    height: 0px !important;
+}
