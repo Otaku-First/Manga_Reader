@@ -3,6 +3,7 @@
 /TB
 /youtube
 /company_site/
-/*.gitignore
+.gitignore
+/.idea
 
 
